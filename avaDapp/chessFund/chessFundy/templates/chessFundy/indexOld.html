@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Connect to crypto wallet</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+</head>
+
+<body>
+  <ul>
+    <li><a class="nav-link" href="{% url 'game' %}"> Play </a></li>
+    <li><a class="nav-link" href="{% url 'discover' %}"> Discover </a></li>
+  </ul>
+
+  <input type="button" value="Connect Wallet" onclick="connect();">
+
+  <div>
+    {% block body %} {% endblock %}
+  </div>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.7.4-rc.1/web3.min.js"></script>
+<script>
+  /* To connect using MetaMask */
+  async function connect() {
+    if (window.ethereum) {
+
+      await window.ethereum.request({ method: "eth_requestAccounts" });
+      window.web3 = new Web3(window.ethereum);
+
+    } else {
+      console.log("No wallet");
+    }
+  }
+</script>
+
+</html>
