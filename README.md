@@ -1,4 +1,7 @@
 # benko
+
+[benko slides](https://drive.google.com/file/d/1-AMbQinyalREHvXnRD1yTqojGQ30hIA6/view?usp=sharing)
+
 avaDapp WIP -> subnet connection set up, smart contract rework and deploy IP. benko site 127/local merge needed
 
 "benko" comes from the ["Benko Gambit"](https://www.chess.com/openings/Benko-Gambit), a popular opening for black where the player sacrifices material for long-term positional compensation.
