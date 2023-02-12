@@ -48483,20 +48483,19 @@
         <div class="u-clearfix u-sheet u-sheet-1">
             <a href="{% url 'discover' %}"
                 class="u-border-none u-btn u-btn-round u-button-style u-custom-font u-grey-15 u-heading-font u-radius-14 u-btn-1">discover</a>
-            <a href="{% url 'game' %}"
+                <!-- <a href="{% url 'game' %}" -->
+            <a href="http://localhost:8080/"
                 class="u-border-none u-btn u-btn-round u-button-style u-custom-font u-grey-15 u-heading-font u-radius-14 u-btn-2">play</a>
 
             <h2 class="u-text u-text-body-alt-color u-text-1">benko</h2>
             {% block body %}
             {% if image %}
-            <img class="u-image u-image-round u-preserve-proportions u-radius-25 u-image-1" src="images/chessHome.png"
-                alt="" data-image-width="900" data-image-height="900">
+            <!-- <img class="u-image u-image-round u-preserve-proportions u-radius-25 u-image-1" src=""
+                alt="" data-image-width="900" data-image-height="900"> -->
             {% endif %}
             {% endblock %}
         </div>
     </section>
-
-
 
     <section class="u-backlink u-clearfix u-grey-90">
         <p class="u-text">
@@ -48508,11 +48507,5 @@
     </section>
 
 </body>
-
-</html>
-
-<!DOCTYPE html>
-<html style="font-size: 16px;" lang="en">
-<a href="{% url 'discover' %}">Discover</a> <a href="{% url 'game' %}"> Play </a>
 
 </html>
